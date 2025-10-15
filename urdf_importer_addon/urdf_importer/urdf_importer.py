@@ -29,7 +29,7 @@ class URDFImporter(bpy.types.Operator, ImportHelper):
     rename_materials: bpy.props.BoolProperty(name="Rename materials", default=True)
     apply_weld: bpy.props.BoolProperty(name="Apply weld modifier", default=True)
     unique_name: bpy.props.BoolProperty(name="Each texture has an unique name", default=True)
-    scale_unit: bpy.props.FloatProperty(name="Scale unit (for Unreal Engine is 0.01)", default=0.01)
+    scale_unit: bpy.props.FloatProperty(name="Scale unit", default=1.0)
 
     # ImportHelper mixin class uses this
     filename_ext = ".urdf"
